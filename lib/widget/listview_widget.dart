@@ -31,7 +31,10 @@ class ListViewWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              const Text('Name'),
+              const Text(
+                'Name',
+                style: TextStyle(color: Colors.black),
+              ),
             ],
           ),
         ),
@@ -42,7 +45,7 @@ class ListViewWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       physics: const ClampingScrollPhysics(),
       child: SizedBox(
-        height: 70,
+        height: 100,
         child: Row(
           children: [
             SizedBox(
@@ -63,7 +66,7 @@ class CircularButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.translate(
-      offset: const Offset(-20, 0),
+      offset: const Offset(-20, -15),
       child: Container(
         width: 70,
         height: 70,
